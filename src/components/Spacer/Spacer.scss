@@ -1,0 +1,11 @@
+.SpacerComponent {
+  &.small {
+    height: 13px;
+  }
+  &.medium {
+    height: 26px;
+  }
+  &.big {
+    height: 48px;
+  }
+}

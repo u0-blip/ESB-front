@@ -1,0 +1,66 @@
+{
+  "name": "esb-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/prop-types": "^15.7.3",
+    "@types/react-select": "^3.0.10",
+    "axios": "^0.19.1",
+    "bulma": "^0.8.0",
+    "bulma-pageloader": "^0.3.0",
+    "bulma-pagination-react": "^0.1.1",
+    "bulma-pricingtable": "^0.2.0",
+    "fake-auth": "^0.0.5",
+    "jwt-decode": "^2.2.0",
+    "logrocket": "^1.0.6",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "node-sass": "^4.13.0",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.9.0",
+    "react": "^16.12.0",
+    "react-datetime": "^2.16.3",
+    "react-dom": "^16.12.0",
+    "react-image-crop": "^8.6.2",
+    "react-loading-skeleton": "^2.0.1",
+    "react-paypal-express-checkout": "^1.0.5",
+    "react-phone-number-input": "^3.0.22",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "react-select": "^3.0.8",
+    "react-super-responsive-table": "^5.1.1",
+    "react-toast-notifications": "^2.4.0",
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "dotenv-cli": "^3.1.0",
+    "dotenv-expand": "^5.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build:development": "REACT_APP_ENV=development yarn run build",
+    "build:production": "REACT_APP_ENV=production yarn run build",
+    "build": "dotenv -e .env.${REACT_APP_ENV} react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:4030"
+}

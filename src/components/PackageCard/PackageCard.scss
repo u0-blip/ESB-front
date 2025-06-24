@@ -1,0 +1,85 @@
+.PackageCardComponent.pricing-plan {
+  box-shadow: 0px 2px 5px #d4d4d4;
+
+  // bronze package
+  &.pricing-plan__6 {
+    background-color: #ffd17b;
+
+    .plan-header {
+      background-color: #ffd17b;
+    }
+    .plan-price {
+      background-color: #ffd17b;
+    }
+    .plan-items {
+      .plan-item {
+        background-color: #ffc862;
+        border-bottom: 0.1rem solid #ffc862;
+      }
+    }
+    .plan-footer {
+      background-color: #ffd17b;
+    }
+  }
+  // silver package
+  &.pricing-plan__2 {
+    background-color: #bebebe;
+
+    .plan-header {
+      background-color: #bebebe;
+    }
+    .plan-price {
+      background-color: #bebebe;
+    }
+    .plan-items {
+      .plan-item {
+        background-color: #b5b5b5;
+        border-bottom: 0.1rem solid #b5b5b5;
+      }
+    }
+    .plan-footer {
+      background-color: #bebebe;
+    }
+  }
+  // gold package
+  &.pricing-plan__3 {
+    background-color: #e2cf62;
+
+    .plan-header {
+      background-color: #e2cf62;
+    }
+    .plan-price {
+      background-color: #e2cf62;
+    }
+    .plan-items {
+      .plan-item {
+        background-color: #d6c357;
+        border-bottom: 0.1rem solid #d6c357;
+      }
+    }
+    .plan-footer {
+      background-color: #e2cf62;
+    }
+  }
+
+  // .plan-items {
+  //   .plan-item {
+  //     background-color: white;
+  //   }
+  // }
+
+  // .plan-footer {
+  //   #zoid-paypal-button-361f3fe3e4 > .zoid-outlet > iframe.zoid-component-frame {
+  //     z-index: 0;
+  //   }
+  //   .paypal-button {
+  //     iframe {
+  //       #paypal-animation-container {
+  //         #paypal-other-options {
+  //           z-index: 0;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}

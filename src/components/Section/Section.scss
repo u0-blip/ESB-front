@@ -1,0 +1,10 @@
+@import '../../../node_modules/bulma/sass/utilities/_all.sass';
+
+.SectionComponent {
+  &.section {
+    @include touch() {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+}

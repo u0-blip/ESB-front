@@ -1,0 +1,19 @@
+.TeamImageComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .image-wrapper {
+    width: 60%;
+    @media screen and (min-width: 769px) {
+      max-width: 227px;
+      max-height: 227px;
+    }
+  }
+  
+  .title {
+    margin-top: 1rem;
+  }
+
+}

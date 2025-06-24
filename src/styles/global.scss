@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+// 1. Import the initial variables
+@import '../../node_modules/bulma/sass/utilities/initial-variables.sass';
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+// $blue: #06bcef;
+// Add pink and its invert
+// $pink: #ff8080;
+// $pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+// 3. Set the derived variables
+// Use the new pink as the primary color
+// $primary: $pink;
+// $primary-invert: $pink-invert;
+// 4. Import the rest of Bulma
+@import '../../node_modules/bulma/bulma.sass';
+@import '../../node_modules/bulma-pricingtable/dist/css/bulma-pricingtable.sass';
+// SEE DOCS FOR MORE:
+// https://bit.ly/30UvE5O
+
+// IMPORT FONT AWESOME
+@import url('https://use.fontawesome.com/releases/v5.12.0/css/all.css');
+
+// ### BEGIN - padding and margin mixins ###
+$max: 80;
+$offset: 4;
+$unit: 'px'; // Feel free to change the unit.
+
+@mixin class-names-creator($className, $styleName) {
+  $i: 0;
+  @while $i <= $max {
+    #{$className + $i} {
+      #{$styleName}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}
+
+@include class-names-creator('.pt-', 'padding-top');
+@include class-names-creator('.pb-', 'padding-bottom');
+@include class-names-creator('.pl-', 'padding-left');
+@include class-names-creator('.pr-', 'padding-right');
+@include class-names-creator('.mt-', 'margin-top');
+@include class-names-creator('.mb-', 'margin-bottom');
+@include class-names-creator('.ml-', 'margin-left');
+@include class-names-creator('.mr-', 'margin-right');
+@include class-names-creator('.margin-', 'margin');
+// ### END - padding and margin mixins ###
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-justify-content-center {
+  justify-content: center;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}

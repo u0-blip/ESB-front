@@ -1,0 +1,15 @@
+@import '../../../node_modules/bulma/sass/utilities/_all.sass';
+
+.UserDashboardSectionComponent {
+  &.container {
+    @include mobile() {
+      .SpacerComponent {
+        height: unset;
+      }
+
+      .box {
+        padding: unset;
+      }
+    }
+  }
+}

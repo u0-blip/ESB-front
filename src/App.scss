@@ -1,0 +1,27 @@
+@import './styles/global.scss';
+@import '../node_modules/bulma-pageloader/dist/css/bulma-pageloader.min.css';
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: whitesmoke;
+}
+.AppComponent {
+
+  .pageloader {
+    background: #f3f3f3fa;
+
+    &::after {
+      border: 0 solid #FFDD57;
+    }
+    .title {
+      color: #000000;
+      font-size: 1.2rem;
+    }
+  }
+
+  .page-wrapper {
+    padding-bottom: 200px; /* Footer height */
+  }
+
+}

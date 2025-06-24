@@ -1,0 +1,52 @@
+.ScoreCardItemComponent {
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  .columns:first-child {
+    margin-bottom: unset;
+  }
+
+  .columns.is-mobile.is-gapless:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column-center {
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .subtitle.pick-result {
+    margin-bottom: unset;
+  }
+
+}
+
+.ScoreCardItemComponent.box {
+  padding: 0.75rem;
+  .columns:first-child {
+    margin-bottom: 0.5rem;
+  
+    .subtitle {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.ScoreCardItemComponent.is-gapless {
+  padding: unset;
+}
