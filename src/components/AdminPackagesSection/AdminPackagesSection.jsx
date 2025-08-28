@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useToasts } from 'react-toast-notifications';
-import Select from 'react-select';
 
 // COMPONENTS
 import Section from '../Section/Section';

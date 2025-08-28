@@ -11,11 +11,11 @@
     "bulma-pagination-react": "^0.1.1",
     "bulma-pricingtable": "^0.2.0",
     "fake-auth": "^0.0.5",
+    "invariant": "^2.2.4",
     "jwt-decode": "^2.2.0",
     "logrocket": "^1.0.6",
     "md5": "^2.2.1",
     "moment": "^2.24.0",
-    "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.9.0",
     "react": "^16.12.0",
@@ -26,7 +26,7 @@
     "react-paypal-express-checkout": "^1.0.5",
     "react-phone-number-input": "^3.0.22",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "5.0.1",
     "react-select": "^3.0.8",
     "react-super-responsive-table": "^5.1.1",
     "react-toast-notifications": "^2.4.0",
@@ -37,7 +37,8 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "dotenv-cli": "^3.1.0",
-    "dotenv-expand": "^5.1.0"
+    "dotenv-expand": "^5.1.0",
+    "sass": "^1.90.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -62,5 +63,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:4030"
+  "proxy": "http://localhost:4030",
+  "resolutions": {
+    "@babel/runtime": "7.24.8"
+  }
 }

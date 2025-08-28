@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useToasts } from 'react-toast-notifications';
 
 // COMPONENTS
@@ -19,7 +19,7 @@ import { ExecGraphQl, sendReferralInvite } from '../../http/httpService';
 import { listUsersQl } from '../../http/graphqlQuerys';
 import { useAuth } from '../../utils/auth';
 import { isValidEmail } from '../../utils/functions';
-import { MENU_ITEM, LOCALSTORAGE_KEYS } from '../../utils/constants';
+import { MENU_ITEM } from '../../utils/constants';
 
 // IMAGES
 // import imageCredits from '../../assets/images/credits.jpg'
@@ -39,18 +39,18 @@ function UserDashboardSection(props) {
   // TOAST
   const { addToast } = useToasts();
 
-  useEffect(() => {
-    loadUser();
-  }, []);
-
-  const loadUser = async () => {
+  const loadUser = useCallback(async () => {
     const userData = await ExecGraphQl(listUsersQl(), {
       userId: auth?.user?.userId,
     });
     if (userData?.data?.ListUsers?.rows) {
       setUser(userData.data.ListUsers.rows[0]);
     }
-  };
+  }, [auth?.user?.userId]);
+
+  useEffect(() => {
+    loadUser();
+  }, [loadUser]);
 
   const handleCloseModal = () => {
     setShowModal(false);
